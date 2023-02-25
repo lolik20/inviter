@@ -28,4 +28,5 @@ with TelegramClient('session_name', api_id, api_hash) as client:
             print(f"Пользователь {user} приглашен в группу {group_id}")
             time.sleep(600)
         except Exception as e:
+            time.sleep(600)
             print(f"Ошибка при приглашении пользователя {user}: {e}")

@@ -26,6 +26,6 @@ with TelegramClient('session_name', api_id, api_hash) as client:
             # Приглашаем пользователя в группу
             client(InviteToChannelRequest(channel=group_id, users=[user_entity]))
             print(f"Пользователь {user} приглашен в группу {group_id}")
-            time.sleep(60)
+            time.sleep(600)
         except Exception as e:
             print(f"Ошибка при приглашении пользователя {user}: {e}")
